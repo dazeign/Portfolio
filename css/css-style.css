@@ -1802,6 +1802,7 @@ h4 {
 	background-position: center center;
 	background-size: 100% 100%;
 	background-image: url(../images/shape-timeline_bg.png);
+	background-color: var(--bg);
 }
 
 @media (max-width: 767px) {
@@ -1909,6 +1910,12 @@ h4 {
 	margin-bottom: 17px;
 }
 .timeline_area .single_time_line h4 span {
+	font-size: 0.68em;
+	color: var(--grey2);
+}
+.timeline_area .single_time_line a {
+	font-family: 'Kumbh Sans', serif;
+	text-decoration: underline;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1971,7 +1978,7 @@ h4 {
 .timeline_area .single_time_wrap .single_time_line {
 	-webkit-box-flex: 42%;
 	-ms-flex: 42% 0 0px;
-	flex: 42% 0 0;
+	flex: 48% 0 0;
 }
 
 @media (max-width: 767px) {
@@ -2017,6 +2024,7 @@ h4 {
 .gallery_area {
 	padding-bottom: 160px;
 	padding-top: 80px;
+	background-color: var(--bg);
 }
 
 @media (max-width: 767px) {
