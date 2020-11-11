@@ -45,7 +45,7 @@
 	justify-content: start;
 }
 * {
-	border: 1px solid #ea8b96;
+	/* border: 1px solid #ea8b96; */
 }
 :root {
 	--bg: #1a1a1a;
@@ -480,7 +480,7 @@ h3 {
 	bottom: 40px;
 	width: 50px;
 	height: 50px;
-	background: #4508fa;
+	background: var(--pri);
 	color: #fff;
 	text-align: center;
 	line-height: 50px;
@@ -2449,7 +2449,7 @@ h3 {
 	font-size: 40px;
 	font-weight: 900;
 	line-height: 55px;
-	color: #fff;
+	color: var(--white);
 	font-family: 'Gilroy-Heavy';
 }
 
@@ -2471,7 +2471,7 @@ h3 {
 
 /* line 36, C:/xampp/htdocs/anthony HTML - preview/scss/_contact.scss */
 .contact_form_area .contact_form {
-	background: #fff;
+	background: var(--bg);
 	padding: 100px 120px 100px 57px;
 }
 
@@ -2499,22 +2499,23 @@ h3 {
 .contact_form_area .contact_form .contact_field textarea {
 	width: 100%;
 	border: 0;
-	border-bottom: 1px solid var(--white2);
+	border-bottom: 1px solid var(--grey2);
 	font-size: 16px;
 	font-weight: 300;
 	font-family: 'Kumbh Sans', sans-serif !important;
 	resize: none;
 	padding-bottom: 19px;
-	color: var(--grey2);
+	color: var(--white);
+	background: var(--bg);
 }
 
 /* line 57, C:/xampp/htdocs/anthony HTML - preview/scss/_contact.scss */
 .contact_form_area .contact_form .contact_field input::placeholder,
 .contact_form_area .contact_form .contact_field textarea::placeholder {
-	color: #707b8e;
+	color: var(--grey);
 	font-weight: 300;
 	font-size: 16px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* line 63, C:/xampp/htdocs/anthony HTML - preview/scss/_contact.scss */
@@ -2562,7 +2563,7 @@ label.error {
 
 /* line 96, C:/xampp/htdocs/anthony HTML - preview/scss/_contact.scss */
 .info.valid {
-	color: #4508fa;
+	color: var(--pri);
 }
 
 /* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
@@ -2622,7 +2623,7 @@ label.error {
 
 /* line 33, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
 .footer .copy-right_text .copy_right a {
-	color: #4508fa;
+	color: var(--pri);
 }
 
 /* line 38, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
@@ -2642,14 +2643,14 @@ label.error {
 	height: 40px;
 	display: inline-block;
 	text-align: center;
-	background: #fafafa;
+	background: var(--bg);
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	margin: 0 3px;
-	color: #000021;
+	color: var(--pri);
+	border: 1px solid var(--pri);
 	line-height: 40px !important;
-	color: #000021;
 }
 
 /* line 57, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
@@ -2659,8 +2660,8 @@ label.error {
 
 /* line 60, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
 .footer .socail_links ul li a:hover {
-	background: #4508fa !important;
-	color: #fff;
+	background: var(--pri) !important;
+	color: var(--white);
 }
 
 /* line 68, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
@@ -2682,18 +2683,17 @@ label.error {
 	height: 60px;
 	padding-left: 25px;
 	font-size: 14px;
-	color: #000;
-	border: none;
-	border: 1px solid #e8f3fe;
+	color: var(--white);
 	border-radius: 0px;
-	font-family: 'Poppins', sans-serif;
+	background-color: var(--bg);
+	border: 1px solid var(--grey2);
 }
 
 /* line 84, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
 .footer .newsletter_form input::placeholder {
 	font-size: 14px;
-	font-family: 'Poppins', sans-serif;
-	color: #aeb4ba;
+	font-family: 'Kumbh Sans', sans-serif;
+	color: var(--grey);
 	font-weight: 400;
 }
 
@@ -2730,8 +2730,8 @@ label.error {
 /* line 120, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
 .footer .footer_menu_border {
 	margin-top: 80px;
-	border-top: 1px solid #e8f3fe;
-	border-bottom: 1px solid #e8f3fe;
+	border-top: 1px solid var(--grey2);
+	border-bottom: 1px solid var(--grey2);
 	padding: 16px 0 16px 0;
 }
 
@@ -2774,14 +2774,14 @@ label.error {
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-family: 'Playfair Display', serif;
+	font-family: 'Gilroy-Heavy';
 	font-weight: 900;
-	color: #000021;
+	color: var(--pri);
 }
 
 /* line 146, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
 .footer .footer_menu ul li a:hover {
-	color: #4508fa;
+	color: var(--white);
 }
 
 /*# sourceMappingURL=style.css.map */
