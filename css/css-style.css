@@ -146,12 +146,12 @@ h6 a {
 
 /* line 54, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 input::placeholder {
-	font-family: 'Kumbh Sans', sans-serif;
+	font-family: 'Kumbh Sans', sans-serif !important;
 }
 
 /* line 57, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 textarea::placeholder {
-	font-family: 'Kumbh Sans', sans-serif;
+	font-family: 'Kumbh Sans', sans-serif !important;
 }
 
 /* line 60, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
@@ -2373,7 +2373,7 @@ h3 {
 .testmonial_area .owl-dots .owl-dot {
 	width: 15px;
 	height: 15px;
-	background: #e9e9ff;
+	background: var(--grey);
 	display: inline-block;
 	border-radius: 50%;
 	margin: 0 4.5px;
@@ -2381,7 +2381,7 @@ h3 {
 
 /* line 112, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .owl-dots .owl-dot.active {
-	background: #4508fa;
+	background: var(--pri);
 }
 
 /* line 3, C:/xampp/htdocs/anthony HTML - preview/scss/_brand.scss */
@@ -2393,7 +2393,7 @@ h3 {
 .brad_area .single_brand {
 	text-align: center;
 	height: 300px;
-	border-right: 1px solid #e8f3fe;
+	border-right: 1px solid var(--grey2);
 }
 
 @media (max-width: 767px) {
@@ -2428,12 +2428,12 @@ h3 {
 
 /* line 13, C:/xampp/htdocs/anthony HTML - preview/scss/_contact.scss */
 .contact_form_area .blue_bg {
-	background: #4508fa;
+	background: var(--pri);
 }
 
 /* line 16, C:/xampp/htdocs/anthony HTML - preview/scss/_contact.scss */
 .contact_form_area .contact_text {
-	background: #4508fa;
+	background: var(--pri);
 }
 
 @media (max-width: 767px) {
@@ -2449,6 +2449,7 @@ h3 {
 	font-weight: 900;
 	line-height: 55px;
 	color: #fff;
+	font-family: 'Gilroy-Heavy';
 }
 
 @media (max-width: 767px) {
@@ -2497,13 +2498,13 @@ h3 {
 .contact_form_area .contact_form .contact_field textarea {
 	width: 100%;
 	border: 0;
-	border-bottom: 1px solid #e8f3fe;
+	border-bottom: 1px solid var(--white2);
 	font-size: 16px;
 	font-weight: 300;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Kumbh Sans', sans-serif !important;
 	resize: none;
 	padding-bottom: 19px;
-	color: #222;
+	color: var(--grey2);
 }
 
 /* line 57, C:/xampp/htdocs/anthony HTML - preview/scss/_contact.scss */
