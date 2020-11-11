@@ -131,7 +131,7 @@ h2,
 h3,
 h4,
 h5 {
-	color: var(--pri2);
+	/* color: var(--grey2); */
 }
 
 /* line 43, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
@@ -560,8 +560,8 @@ h3 {
 
 /* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
 .boxed-btn {
-	background: #4508fa;
-	color: #fff;
+	background: var(--pri);
+	color: var(--white);
 	display: inline-block;
 	padding: 1rem 2.4rem 0.8rem 2.4rem;
 	font-family: 'Kumbh Sans', sans-serif;
@@ -576,9 +576,11 @@ h3 {
 
 /* line 14, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
 .boxed-btn:hover {
-	background: #fff;
+	background: var(--white2);
 	color: var(--pri);
 	border: 1px solid #4508fa;
+	/* text-transform: uppercase; */
+	transition: 0.2s ease;
 }
 
 /* line 19, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
@@ -1666,6 +1668,13 @@ h3 {
 	padding-bottom: 160px;
 	background-color: var(--bg);
 }
+.service_area .section_title h3 {
+	font-family: 'Gilroy-Heavy';
+	color: var(--pri);
+}
+.service_area .section_title span {
+	color: var(--grey);
+}
 
 @media (max-width: 767px) {
 	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_service.scss */
@@ -1747,6 +1756,7 @@ h3 {
 	font-size: 25px;
 	line-height: 35px;
 	text-transform: uppercase;
+	color: var(--pri);
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1788,14 +1798,13 @@ h3 {
 
 /* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area {
-	padding-bottom: 120px;
-	padding-top: 36px;
+	padding-bottom: 160px;
+	padding-top: 160px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	background-size: 100% 100%;
-	background-image: url(../images/shape-timeline_bg.png);
-	background-color: var(--bg);
+	background-image: url(../images/background-timeline.png);
 }
 
 @media (max-width: 767px) {
@@ -1843,11 +1852,12 @@ h3 {
 
 /* line 29, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area .timeline_title h3 {
-	font-size: 2.6rem;
+	font-size: 3rem;
 	font-weight: 900;
 	line-height: 50px;
 	text-transform: uppercase;
-	color: var(--pri2);
+	color: var(--pri);
+	font-family: 'Gilroy-Heavy';
 }
 
 @media (max-width: 767px) {
