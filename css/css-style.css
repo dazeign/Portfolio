@@ -590,23 +590,26 @@ h3 {
 
 /* line 23, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
 .boxed-btn2 {
-	background: #fff;
-	color: #4508fa;
+	background: var(--pri);
+	color: var(--white2);
 	display: inline-block;
-	padding: 18px 50px 18px 50px;
-	font-family: 'Poppins', sans-serif;
-	font-size: 16px;
+	padding: 1rem 2.4rem 0.8rem 2.4rem;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: ;
+	box-shadow: 0px 16px 24px rgba(102, 45, 145, 0.2),
+		0px 2px 6px rgba(102, 45, 145, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
 	font-weight: 500;
 	border: 0;
 	text-align: center;
 	text-transform: capitalize;
 	cursor: pointer;
+	text-transform: uppercase;
 }
 
 /* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
 .boxed-btn2:hover {
-	background: #4508fa;
-	color: #fff;
+	background: var(--white);
+	color: var(--pri);
 }
 
 /* line 39, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
@@ -1121,7 +1124,7 @@ h3 {
 	box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 	position: fixed;
 	width: 100%;
-	top: -80px;
+	top: -110px;
 	left: 0;
 	right: 0;
 	z-index: 990;
@@ -1132,7 +1135,7 @@ h3 {
 	padding: 0px 60px;
 	background: var(--bg);
 	opacity: 0.98;
-	max-height: 150px;
+	max-height: 120px;
 }
 @media (max-width: 767px) {
 	/* line 112, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
@@ -1852,12 +1855,13 @@ h3 {
 
 /* line 29, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area .timeline_title h3 {
-	font-size: 3rem;
+	font-size: 3.8em;
 	font-weight: 900;
-	line-height: 50px;
+	line-height: 4rem;
 	text-transform: uppercase;
 	color: var(--pri);
 	font-family: 'Gilroy-Heavy';
+	letter-spacing: 0.4rem;
 }
 
 @media (max-width: 767px) {
@@ -1906,13 +1910,15 @@ h3 {
 
 /* line 59, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area .single_time_line h4 {
-	font-size: 1.8em;
-	font-family: 'Eczar', serif;
+	font-size: 1.6em;
+	font-family: 'Gilroy-Medium';
 	font-weight: 700;
 	color: var(--pri);
 	margin-bottom: 17px;
+	text-transform: uppercase;
 }
 .timeline_area .single_time_line h4 span {
+	text-transform: none;
 	font-size: 0.68em;
 	color: var(--grey2);
 }
@@ -2171,6 +2177,12 @@ h3 {
 	padding: 145px 0 150px 0;
 	background-image: url(../images/hire-me-img.jpg);
 }
+.hire_area h3 {
+	color: var(--white) !important;
+}
+.hire_area span {
+	color: var(--grey2) !important;
+}
 
 @media (max-width: 767px) {
 	/* line 4, C:/xampp/htdocs/anthony HTML - preview/scss/_hire.scss */
@@ -2223,8 +2235,8 @@ h3 {
 
 /* line 17, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .single_testmonial {
-	border: 1px solid #e8f3fe;
-	background: #fff;
+	border: 1px solid var(--grey2);
+	background-color: var(--bg);
 	padding: 65px 50px 76px 50px;
 	margin-bottom: 95px;
 	-webkit-transition: 0.5s;
@@ -2251,10 +2263,10 @@ h3 {
 /* line 33, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .single_testmonial p {
 	font-size: 20px;
-	font-family: 'Playfair Display', serif;
-	font-weight: 700;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: 400;
 	line-height: 35px;
-	color: #000021;
+	color: var(--white2);
 	margin-top: 30px;
 	margin-bottom: 76px;
 	-webkit-transition: 0.5s;
@@ -2265,9 +2277,9 @@ h3 {
 
 /* line 45, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .single_testmonial .testimonial_author h4 {
-	font-size: 22px;
-	color: #000021;
-	font-weight: 700;
+	font-size: 1.4em;
+	color: var(--pri);
+	/* font-weight: 700; */
 	padding-left: 50px;
 	position: relative;
 	margin-bottom: 10px;
@@ -2275,6 +2287,7 @@ h3 {
 	-moz-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
+	font-family: 'Gilroy-medium';
 }
 
 @media (max-width: 767px) {
@@ -2290,7 +2303,7 @@ h3 {
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
-	background: #000021;
+	background: var(--pri);
 	height: 2px;
 	width: 30px;
 	content: '';
@@ -2304,9 +2317,8 @@ h3 {
 .testmonial_area .single_testmonial .testimonial_author span {
 	display: block;
 	padding-left: 50px;
-	color: #707b8e;
-	font-weight: 300;
-	font-family: 'Poppins', sans-serif;
+	color: var(--grey);
+	font-family: 'Kumbh Sans', sans-serif;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
 	-o-transition: 0.5s;
@@ -2316,7 +2328,7 @@ h3 {
 
 /* line 78, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .single_testmonial:hover {
-	background: #4508fa;
+	background: var(--pri);
 	border: 1px solid transparent;
 }
 
@@ -2324,7 +2336,7 @@ h3 {
 .testmonial_area .single_testmonial:hover h4,
 .testmonial_area .single_testmonial:hover span,
 .testmonial_area .single_testmonial:hover p {
-	color: #fff !important;
+	color: var(--white) !important;
 }
 
 /* line 84, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
@@ -2334,7 +2346,7 @@ h3 {
 
 /* line 90, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .center .single_testmonial {
-	background: #4508fa;
+	background: var(--pri);
 	border: 1px solid transparent;
 }
 
