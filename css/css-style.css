@@ -45,7 +45,7 @@
 	justify-content: start;
 }
 * {
-	/* border: 1px solid #ea8b96; */
+	border: 1px solid #ea8b96;
 }
 :root {
 	--bg: #1a1a1a;
