@@ -1425,7 +1425,7 @@ h3 {
 	background-position: center center;
 	background-repeat: no-repeat;
 	/* padding: 145px 0 150px 0; */
-	background-image: url(../images/banner-bg-2.jpg);
+	background-image: url(../images/banner-bg.jpg);
 }
 
 @media (max-width: 767px) {
@@ -2077,7 +2077,7 @@ h3 {
 
 /* line 23, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
 .gallery_area .single_gallery a:hover img {
-	transform: scale(1.6);
+	transform: scale(1.2);
 	transition: 0.2s ease-in;
 }
 
