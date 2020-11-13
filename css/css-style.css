@@ -72,6 +72,9 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 /* line 12, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 .img {
