@@ -18,14 +18,7 @@
  *
  * @format
  */
-@font-face {
-	font-family: Sherina;
-	src: url(/fonts/SherinaSafira-MV32r.otf);
-}
-@font-face {
-	font-family: YouThink;
-	src: url(/fonts/Youthink.ttf);
-}
+
 /* xl Normal desktop :1200px. */
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
@@ -33,6 +26,7 @@
 /* small mobile :320px. */
 /* Large Mobile :480px. */
 /* Large Mobile :480px. */
+/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_extend.scss */
 .flex-center-start {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -44,19 +38,6 @@
 	-ms-flex-pack: start;
 	justify-content: start;
 }
-* {
-	/* border: 1px solid #ea8b96; */
-}
-:root {
-	--bg: #1a1a1a;
-	--pri: #662d91;
-	--sec: #090113;
-	--pri2: #c8a1fb;
-	--white: #fefefe;
-	--white2: #d7d7d7;
-	--grey: #9d9d9d;
-	--grey2: #4b4b4b;
-}
 
 /* 1. Theme default css */
 /* xl Normal desktop :1200px. */
@@ -67,13 +48,22 @@
 /* Large Mobile :480px. */
 /* Large Mobile :480px. */
 /* line 5, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
+:root {
+	--bg: #1a1a1a;
+	--pri: #662d91;
+	--sec: #090113;
+	--pri2: #c8a1fb;
+	--white: #fefefe;
+	--white2: #d7d7d7;
+	--grey: #9d9d9d;
+	--grey2: #4b4b4b;
+	--overlay: #0c0116;
+}
 body {
-	font-family: 'Kumbh Sans', sans-serif;
+	font-family: 'Gilroy-Heavy', serif;
 	font-weight: normal;
 	font-style: normal;
-}
-html {
-	scroll-behavior: smooth;
+	background: var(--bg);
 }
 
 /* line 12, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
@@ -101,6 +91,12 @@ button:focus {
 	text-decoration: none;
 	outline: none;
 }
+
+/* line 25, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
+a:focus {
+	text-decoration: none;
+}
+
 /* line 28, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 a:focus,
 a:hover,
@@ -112,14 +108,8 @@ a:hover,
 /* line 34, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 a,
 button {
-	color: var(--bg);
+	color: #1f1f1f;
 	outline: medium none;
-}
-
-.quick_links a {
-	color: var(--white) !important;
-	font-family: 'Kumbh Sans', sans-serif !important;
-	color: var(--grey) !important;
 }
 
 /* line 39, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
@@ -128,7 +118,8 @@ h2,
 h3,
 h4,
 h5 {
-	/* color: var(--grey2); */
+	font-family: 'Gilroy-Heavy', serif;
+	color: var(--pri);
 }
 
 /* line 43, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
@@ -141,14 +132,19 @@ h6 a {
 	color: inherit;
 }
 
+/* line 51, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
+a {
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
 /* line 54, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 input::placeholder {
-	font-family: 'Kumbh Sans', sans-serif !important;
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* line 57, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 textarea::placeholder {
-	font-family: 'Kumbh Sans', sans-serif !important;
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* line 60, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
@@ -167,8 +163,9 @@ p {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 30px;
-	color: var(--grey);
+	color: #707b8e;
 	margin-bottom: 0px;
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* line 76, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
@@ -304,8 +301,8 @@ h3 {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #001d38;
-	opacity: 0.6;
+	background: var(--overlay);
+	opacity: 0.8;
 	content: '';
 	z-index: -1;
 }
@@ -323,24 +320,24 @@ h3 {
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5db2ff+0,7db9e8+100&1+24,0+96 */
 	background: -moz-linear-gradient(
 		left,
-		#5db2ff 0%,
-		#65b4f9 24%,
+		var(--overlay) 0%,
+		var(--overlay) 24%,
 		rgba(124, 185, 233, 0) 96%,
 		rgba(125, 185, 232, 0) 100%
 	);
 	/* FF3.6-15 */
 	background: -webkit-linear-gradient(
 		left,
-		#5db2ff 0%,
-		#65b4f9 24%,
+		var(--overlay) 0%,
+		var(--overlay) 24%,
 		rgba(124, 185, 233, 0) 96%,
 		rgba(125, 185, 232, 0) 100%
 	);
 	/* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(
 		to right,
-		#5db2ff 0%,
-		#65b4f9 24%,
+		var(--overlay) 0%,
+		var(--overlay) 24%,
 		rgba(124, 185, 233, 0) 96%,
 		rgba(125, 185, 232, 0) 100%
 	);
@@ -422,7 +419,7 @@ h3 {
 /* line 270, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 .owl-carousel:hover .owl-nav div:hover {
 	color: #fff;
-	background: #001d38;
+	background: #828a91;
 	border: 1px solid transparent;
 }
 
@@ -478,7 +475,7 @@ h3 {
 	width: 50px;
 	height: 50px;
 	background: var(--pri);
-	color: #fff;
+	color: var(--white);
 	text-align: center;
 	line-height: 50px;
 	-webkit-border-radius: 50%;
@@ -560,9 +557,9 @@ h3 {
 	background: var(--pri);
 	color: var(--white);
 	display: inline-block;
-	padding: 1rem 2.4rem 0.8rem 2.4rem;
+	padding: 16px 40px 15px 40px;
 	font-family: 'Kumbh Sans', sans-serif;
-	font-size: 0.96em;
+	font-size: 14px;
 	font-weight: 400;
 	border: 0;
 	border: 1px solid transparent;
@@ -573,11 +570,9 @@ h3 {
 
 /* line 14, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
 .boxed-btn:hover {
-	background: var(--white2);
+	background: var(--white);
 	color: var(--pri);
-	border: 1px solid #4508fa;
-	/* text-transform: uppercase; */
-	transition: 0.2s ease;
+	border: 1px solid var(--pri);
 }
 
 /* line 19, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
@@ -588,25 +583,22 @@ h3 {
 /* line 23, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
 .boxed-btn2 {
 	background: var(--pri);
-	color: var(--white2);
+	color: var(--white);
 	display: inline-block;
-	padding: 1rem 2.4rem 0.8rem 2.4rem;
+	padding: 18px 50px 18px 50px;
 	font-family: 'Kumbh Sans', sans-serif;
-	font-size: ;
-	box-shadow: 0px 16px 24px rgba(102, 45, 145, 0.2),
-		0px 2px 6px rgba(102, 45, 145, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+	font-size: 16px;
 	font-weight: 500;
 	border: 0;
 	text-align: center;
 	text-transform: capitalize;
 	cursor: pointer;
-	text-transform: uppercase;
 }
 
 /* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
 .boxed-btn2:hover {
-	background: var(--white);
-	color: var(--pri);
+	background: var(--pri);
+	color: var(--white);
 }
 
 /* line 39, C:/xampp/htdocs/anthony HTML - preview/scss/_btn.scss */
@@ -649,13 +641,12 @@ h3 {
 
 /* line 27, C:/xampp/htdocs/anthony HTML - preview/scss/_section_title.scss */
 .section_title h3 {
-	font-size: 3rem;
+	font-size: 50px;
 	position: relative;
 	z-index: 0;
-	font-family: 'Eczar', serif;
-	font-weight: 800;
-	line-height: 3.4rem;
-	color: var(--pri2);
+	font-family: 'Gilroy-Heavy', serif;
+	font-weight: 900;
+	line-height: 65px;
 }
 
 @media (max-width: 767px) {
@@ -705,12 +696,13 @@ h3 {
 
 /* line 59, C:/xampp/htdocs/anthony HTML - preview/scss/_section_title.scss */
 .section_title span {
-	color: var(--pri);
+	font-size: 14px;
 	font-family: 'Kumbh Sans', sans-serif;
+	color: var(--pri);
 	text-transform: uppercase;
 	font-weight: 400;
-	letter-spacing: 0.26rem;
-	margin-bottom: 1.8rem;
+	letter-spacing: 2.7px;
+	margin-bottom: 13px;
 	display: block;
 }
 
@@ -744,12 +736,12 @@ h3 {
 
 /* line 88, C:/xampp/htdocs/anthony HTML - preview/scss/_section_title.scss */
 .section_title.white_text h3 {
-	color: #fff;
+	color: var(--white);
 }
 
 /* line 91, C:/xampp/htdocs/anthony HTML - preview/scss/_section_title.scss */
 .section_title.white_text span {
-	color: #fff !important;
+	color: var(--white) !important;
 }
 
 /* line 96, C:/xampp/htdocs/anthony HTML - preview/scss/_section_title.scss */
@@ -839,7 +831,7 @@ h3 {
 
 /* line 13, C:/xampp/htdocs/anthony HTML - preview/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav {
-	background: #fff;
+	background: var(--bg);
 	float: right;
 	margin-top: 0;
 	padding: 0;
@@ -857,12 +849,12 @@ h3 {
 /* line 28, C:/xampp/htdocs/anthony HTML - preview/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a:hover {
 	background: transparent;
-	color: #4508fa;
+	color: var(--pri);
 }
 
 /* line 32, C:/xampp/htdocs/anthony HTML - preview/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav a.active {
-	color: #4508fa;
+	color: var(--pri);
 }
 
 @media (max-width: 767px) {
@@ -997,20 +989,13 @@ h3 {
 .header-area .main-header-area {
 	background: var(--bg);
 	background: transparent;
-	padding: 0px 60px;
-	/* max-height: 120px; */
-}
-.header-area .main-header-area .logo img {
-	margin-left: -4rem;
+	padding: 50px 66px;
 }
 
 @media (max-width: 767px) {
 	/* line 31, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 	.header-area .main-header-area {
 		padding: 10px 10px;
-	}
-	.header-area .main-header-area .logo img {
-		margin-left: -4rem;
 	}
 }
 
@@ -1053,7 +1038,7 @@ h3 {
 	position: absolute;
 	left: 0;
 	height: 15px;
-	background: #b3b8bd;
+	background: var(--grey);
 	width: 2px;
 	content: '';
 	transform: translateY(-50%);
@@ -1070,12 +1055,13 @@ h3 {
 .header-area .main-header-area .quick_links ul li a {
 	font-size: 14px;
 	font-weight: 400;
-	color: var(--bg);
+	font-family: 'Kumbh Sans', sans-serif;
+	color: var(--grey);
 }
 
 /* line 75, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .header-area .main-header-area .quick_links ul li a:hover {
-	color: var(--pri) !important;
+	color: var(--pri);
 }
 
 /* line 82, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
@@ -1107,12 +1093,24 @@ h3 {
 	font-size: 16px;
 }
 
+/* line 97, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+.header-area .main-header-area .menu_icon a span {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Kumbh Sans', sans-serif;
+	color: var(--pri);
+	font-weight: 400;
+	margin-right: 19px;
+	position: relative;
+	top: 2px;
+}
+
 /* line 112, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .header-area .main-header-area.sticky {
 	box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 	position: fixed;
 	width: 100%;
-	top: -110px;
+	top: -70px;
 	left: 0;
 	right: 0;
 	z-index: 990;
@@ -1120,17 +1118,14 @@ h3 {
 	transition: transform 500ms ease, background 500ms ease;
 	-webkit-transition: transform 500ms ease, background 500ms ease;
 	box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-	padding: 0px 60px;
+	padding: 10px 60px;
 	background: var(--bg);
-	opacity: 0.98;
-	max-height: 120px;
-	background: red;
 }
+
 @media (max-width: 767px) {
 	/* line 112, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 	.header-area .main-header-area.sticky {
 		padding: 10px 10px;
-		top: -60px;
 	}
 }
 
@@ -1209,7 +1204,7 @@ h3 {
 
 /* line 180, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .header-area .header-top_area .social_media_links a:hover {
-	color: #4508fa;
+	color: var(--pri);
 }
 
 /* line 186, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
@@ -1254,7 +1249,7 @@ h3 {
 
 /* line 210, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .header-area .header-top_area .short_contact_list ul li a i {
-	color: #4508fa;
+	color: var(--pri);
 	margin-right: 7px;
 }
 
@@ -1304,7 +1299,7 @@ h3 {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 4%;
+	padding: 15px;
 }
 
 /* line 251, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
@@ -1313,13 +1308,24 @@ h3 {
 	width: 30px;
 	height: 30px;
 	text-align: center;
-	line-height: 30px;
+	line-height: 136px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.offcanvas_menu .close_menu {
+		line-height: 100px;
+	}
+}
+@media (max-width: 768px) {
+	.offcanvas_menu .close_menu {
+		line-height: 40px;
+	}
 }
 
 /* line 257, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .offcanvas_menu .close_menu i {
 	font-size: 25px;
-	color: var(--grey);
+	color: var(--white);
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 	-o-transition: 0.3s;
@@ -1329,7 +1335,7 @@ h3 {
 
 /* line 262, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .offcanvas_menu .close_menu i:hover {
-	color: #4508fa;
+	color: var(--pri);
 	transform: rotate(180deg);
 }
 
@@ -1343,7 +1349,7 @@ h3 {
 .offcanvas_menu .offcanvas_menu_inner nav ul li a {
 	font-size: 70px;
 	font-weight: 900;
-	color: #000021;
+	color: var(--white2);
 	line-height: 1.3;
 }
 
@@ -1377,7 +1383,7 @@ h3 {
 
 /* line 293, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .offcanvas_menu .offcanvas_menu_inner nav ul li a:hover {
-	color: #4508fa;
+	color: var(--pri);
 }
 
 /* line 301, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
@@ -1393,42 +1399,38 @@ h3 {
 
 /* line 307, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .offcanvas_menu .Quick_links ul li a {
-	color: #000021;
-	font-size: 25px;
+	color: var(--grey);
+	font-size: 28px;
 }
 
 /* line 310, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .offcanvas_menu .Quick_links ul li a:hover {
-	color: #4508fa;
+	color: var(--pri);
 }
 
 /* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 .banner_area {
 	position: relative;
 	z-index: 0;
-	padding-top: 235px;
-	padding-bottom: 215px;
-	min-height: 100vh;
-	max-height: 100vh;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-image: url(../images/brightly-lit-laptop-keyboard.jpg);
 	background: var(--bg);
+	padding: 220px 0;
+	background: url(/images/brightly-lit-laptop-keyboard.jpg);
+	background-size: cover;
+	max-height: 100vh;
+	min-height: 100vh;
 }
 
 @media (max-width: 767px) {
 	/* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area {
-		padding-top: 140px;
-		padding-bottom: 120px;
+		padding: 120px 0;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	/* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area {
-		padding: 200px 0;
+		padding: 180px 0;
 	}
 }
 
@@ -1447,24 +1449,27 @@ h3 {
 
 /* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 .banner_area .banner_inner .banner_text h3 {
-	font-size: 3.8em;
-	font-family: 'Gilroy-Heavy';
+	font-family: 'Gilroy-Heavy', serif;
+	font-size: 80px;
+	font-weight: 900;
+	line-height: 60px;
 	color: var(--white);
-	text-transform: uppercase;
-	letter-spacing: 0.4rem;
 }
+
+/* line 29, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 .banner_area .banner_inner .banner_text h3 span {
-	text-transform: none;
-	font-family: 'Gilroy-Medium';
-	font-size: 0.6em;
-	letter-spacing: 0em;
+	color: var(--white);
+	font-size: 38px;
 }
 
 @media (max-width: 767px) {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area .banner_inner .banner_text h3 {
-		font-size: 40px;
-		line-height: 50px;
+		font-size: 46px;
+		line-height: 38px;
+	}
+	.banner_area .banner_inner .banner_text h3 span {
+		font-size: 27px;
 	}
 }
 
@@ -1472,7 +1477,7 @@ h3 {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area .banner_inner .banner_text h3 {
 		font-size: 56px;
-		line-height: 70px;
+		line-height: 50px;
 	}
 }
 
@@ -1480,19 +1485,20 @@ h3 {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area .banner_inner .banner_text h3 {
 		font-size: 60px;
-		line-height: 75px;
+		line-height: 56px;
 	}
 }
 
 /* line 45, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 .banner_area .banner_inner .banner_text .branding_interaction {
+	margin-top: 24px;
 	margin-bottom: 75px;
 }
 
 @media (max-width: 767px) {
 	/* line 45, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area .banner_inner .banner_text .branding_interaction {
-		margin-top: 38px;
+		margin-top: 20px;
 		margin-bottom: 40px;
 	}
 }
@@ -1500,19 +1506,19 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
 	/* line 45, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area .banner_inner .banner_text .branding_interaction {
-		margin-top: 40px;
+		margin-top: 20px;
 		margin-bottom: 40px;
 	}
 }
 
 /* line 56, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 .banner_area .banner_inner .banner_text .branding_interaction h4 {
-	font-size: 1.2em;
-	font-family: 'Gilroy-Medium';
+	font-size: 24px;
 	font-weight: 600;
-	color: var(--white);
+	font-family: 'Kumbh Sans', sans-serif;
 	text-transform: uppercase;
-	margin-bottom: 3.2rem;
+	margin-bottom: 10px;
+	color: var(--white2);
 }
 
 @media (max-width: 767px) {
@@ -1527,28 +1533,52 @@ h3 {
 	font-size: 16px;
 	color: var(--grey);
 	font-weight: 300;
+	margin-top: 60px;
 }
 
 /* line 73, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-.banner_area .banner_inner .banner_text .resume button {
+.banner_area .banner_inner .banner_text .video_play a {
 	display: inline-block;
+	width: 60px;
+	height: 60px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 	font-size: 16px;
+	line-height: 60px;
 	text-align: center;
+	color: var(--pri);
+	border: 1px solid var(--pri);
+}
+
+/* line 84, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
+.banner_area .banner_inner .banner_text .resume_btn {
+	font-size: 16px;
+	position: relative;
+	top: -2px;
+	left: 1px;
 	background: var(--pri);
-	border: none;
 	color: var(--white);
-	font-family: 'Gilroy-Medium', sans-serif;
-	text-transform: uppercase;
-	padding: 0.8rem 2rem;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
 }
 
 /* line 91, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-.banner_area .banner_inner .banner_text .resume button:hover {
+.banner_area .banner_inner .banner_text .resume_btn:hover {
 	background: var(--white);
 	color: var(--pri);
 	border: 1px solid var(--pri);
-	cursor: pointer;
-	transition: all 0.2s ease-in;
+}
+
+/* line 96, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
+.banner_area .banner_inner .banner_text .video_play span {
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 14px;
+	color: var(--pri);
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-left: 18px;
 }
 
 /* line 107, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
@@ -1633,21 +1663,13 @@ h3 {
 
 /* line 159, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 .banner_area .quick_social_links ul li a:hover {
-	color: #4508fa;
+	color: var(--pri);
 }
 
 /* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_service.scss */
 .service_area {
 	padding-top: 210px;
 	padding-bottom: 160px;
-	background-color: var(--bg);
-}
-.service_area .section_title h3 {
-	font-family: 'Gilroy-Heavy';
-	color: var(--pri);
-}
-.service_area .section_title span {
-	color: var(--grey);
 }
 
 @media (max-width: 767px) {
@@ -1730,7 +1752,6 @@ h3 {
 	font-size: 25px;
 	line-height: 35px;
 	text-transform: uppercase;
-	color: var(--pri);
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1761,9 +1782,6 @@ h3 {
 		margin: 30px 0;
 	}
 }
-.row .single_service .col-lg-4 {
-	background-color: red;
-}
 
 /* line 73, C:/xampp/htdocs/anthony HTML - preview/scss/_service.scss */
 .service_area .single_service:hover .service_icon {
@@ -1775,13 +1793,14 @@ h3 {
 
 /* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area {
-	padding-bottom: 160px;
-	padding-top: 160px;
+	padding-bottom: 120px;
+	padding-top: 36px;
+	background: url(../images/background-timeline.svg) !important;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	background-size: 100% 100%;
-	background-image: url(../images/background-timeline.png);
+	/* background: red; */
 }
 
 @media (max-width: 767px) {
@@ -1815,8 +1834,7 @@ h3 {
 @media (max-width: 767px) {
 	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 	.timeline_area {
-		padding-top: 5px;
-		padding-bottom: 30px;
+		padding: 50px 0;
 	}
 }
 
@@ -1829,13 +1847,11 @@ h3 {
 
 /* line 29, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area .timeline_title h3 {
-	font-size: 3.8em;
+	font-size: 35px;
 	font-weight: 900;
-	line-height: 4rem;
+	line-height: 50px;
 	text-transform: uppercase;
 	color: var(--pri);
-	font-family: 'Gilroy-Heavy';
-	letter-spacing: 0.4rem;
 }
 
 @media (max-width: 767px) {
@@ -1884,21 +1900,10 @@ h3 {
 
 /* line 59, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area .single_time_line h4 {
-	font-size: 1.6em;
-	font-family: 'Gilroy-Medium';
+	font-size: 20px;
 	font-weight: 700;
 	color: var(--pri);
 	margin-bottom: 17px;
-	text-transform: uppercase;
-}
-.timeline_area .single_time_line h4 span {
-	text-transform: none;
-	font-size: 0.68em;
-	color: var(--grey2);
-}
-.timeline_area .single_time_line a {
-	font-family: 'Kumbh Sans', serif;
-	text-decoration: underline;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1959,9 +1964,9 @@ h3 {
 
 /* line 99, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area .single_time_wrap .single_time_line {
-	-webkit-box-flex: 42%;
-	-ms-flex: 42% 0 0px;
-	flex: 48% 0 0;
+	-webkit-box-flex: 46%;
+	-ms-flex: 46% 0 0px;
+	flex: 46% 0 0;
 }
 
 @media (max-width: 767px) {
@@ -2007,7 +2012,6 @@ h3 {
 .gallery_area {
 	padding-bottom: 160px;
 	padding-top: 80px;
-	background-color: var(--bg);
 }
 
 @media (max-width: 767px) {
@@ -2043,16 +2047,15 @@ h3 {
 	-moz-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
 }
 
 /* line 23, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
 .gallery_area .single_gallery a:hover img {
 	transform: scale(1.2);
-	transition: all 0.2s ease-in;
 }
 
 /* line 28, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
@@ -2150,13 +2153,7 @@ h3 {
 	background-position: center center;
 	background-repeat: no-repeat;
 	padding: 145px 0 150px 0;
-	background-image: url(../images/hire-me-img.jpg);
-}
-.hire_area h3 {
-	color: var(--white) !important;
-}
-.hire_area span {
-	color: var(--grey2) !important;
+	background: url(../images/hire-me-img.jpg);
 }
 
 @media (max-width: 767px) {
@@ -2187,7 +2184,7 @@ h3 {
 /* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area {
 	padding-top: 210px;
-	padding-bottom: 120px;
+	padding-bottom: 200px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -2197,7 +2194,7 @@ h3 {
 @media (max-width: 767px) {
 	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 	.testmonial_area {
-		padding-top: 130px;
+		padding-top: 150px;
 		padding-bottom: 80px;
 	}
 }
@@ -2211,7 +2208,7 @@ h3 {
 /* line 17, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .single_testmonial {
 	border: 1px solid var(--grey2);
-	background-color: var(--bg);
+	background: var(--bg);
 	padding: 65px 50px 76px 50px;
 	margin-bottom: 95px;
 	-webkit-transition: 0.5s;
@@ -2241,7 +2238,7 @@ h3 {
 	font-family: 'Kumbh Sans', sans-serif;
 	font-weight: 400;
 	line-height: 35px;
-	color: var(--white2);
+	color: var(--grey);
 	margin-top: 30px;
 	margin-bottom: 76px;
 	-webkit-transition: 0.5s;
@@ -2252,9 +2249,9 @@ h3 {
 
 /* line 45, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .single_testmonial .testimonial_author h4 {
-	font-size: 1.4em;
+	font-size: 22px;
 	color: var(--pri);
-	/* font-weight: 700; */
+	font-weight: 700;
 	padding-left: 50px;
 	position: relative;
 	margin-bottom: 10px;
@@ -2262,7 +2259,6 @@ h3 {
 	-moz-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
-	font-family: 'Gilroy-medium';
 }
 
 @media (max-width: 767px) {
@@ -2293,6 +2289,7 @@ h3 {
 	display: block;
 	padding-left: 50px;
 	color: var(--grey);
+	font-weight: 300;
 	font-family: 'Kumbh Sans', sans-serif;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -2316,7 +2313,7 @@ h3 {
 
 /* line 84, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .single_testmonial:hover h4:before {
-	background: #fff;
+	background: var(--white) !important;
 }
 
 /* line 90, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
@@ -2329,12 +2326,12 @@ h3 {
 .testmonial_area .center .single_testmonial p,
 .testmonial_area .center .single_testmonial h4,
 .testmonial_area .center .single_testmonial span {
-	color: #fff;
+	color: var(--white) !important;
 }
 
 /* line 96, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .center .single_testmonial h4:before {
-	background: #fff;
+	background: var(--white);
 }
 
 /* line 101, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
@@ -2346,9 +2343,9 @@ h3 {
 
 /* line 105, C:/xampp/htdocs/anthony HTML - preview/scss/_testmonial.scss */
 .testmonial_area .owl-dots .owl-dot {
-	width: 15px;
-	height: 15px;
-	background: var(--grey);
+	width: 12px;
+	height: 12px;
+	background: var(--grey2);
 	display: inline-block;
 	border-radius: 50%;
 	margin: 0 4.5px;
@@ -2358,7 +2355,9 @@ h3 {
 .testmonial_area .owl-dots .owl-dot.active {
 	background: var(--pri);
 }
-
+.brad_area {
+	margin-top: 40px;
+}
 /* line 3, C:/xampp/htdocs/anthony HTML - preview/scss/_brand.scss */
 .brad_area .brand_active:last-child {
 	border-right: 0;
@@ -2367,7 +2366,7 @@ h3 {
 /* line 7, C:/xampp/htdocs/anthony HTML - preview/scss/_brand.scss */
 .brad_area .single_brand {
 	text-align: center;
-	height: 300px;
+	height: 260px;
 	border-right: 1px solid var(--grey2);
 }
 
@@ -2424,7 +2423,6 @@ h3 {
 	font-weight: 900;
 	line-height: 55px;
 	color: var(--white);
-	font-family: 'Gilroy-Heavy';
 }
 
 @media (max-width: 767px) {
@@ -2474,13 +2472,13 @@ h3 {
 	width: 100%;
 	border: 0;
 	border-bottom: 1px solid var(--grey2);
+	background: var(--bg);
 	font-size: 16px;
 	font-weight: 300;
-	font-family: 'Kumbh Sans', sans-serif !important;
+	font-family: 'Kumbh Sans', sans-serif;
 	resize: none;
 	padding-bottom: 19px;
 	color: var(--white);
-	background: var(--bg);
 }
 
 /* line 57, C:/xampp/htdocs/anthony HTML - preview/scss/_contact.scss */
@@ -2583,7 +2581,7 @@ label.error {
 /* line 25, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
 .footer .copy-right_text .copy_right {
 	font-size: 16px;
-	color: #707b8e;
+	color: var(--grey);
 	margin-bottom: 0;
 	font-weight: 300;
 }
@@ -2623,8 +2621,9 @@ label.error {
 	border-radius: 50%;
 	margin: 0 3px;
 	color: var(--pri);
-	border: 1px solid var(--pri);
 	line-height: 40px !important;
+	color: var(--pri);
+	border: 1px solid var(--pri);
 }
 
 /* line 57, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
@@ -2658,9 +2657,11 @@ label.error {
 	padding-left: 25px;
 	font-size: 14px;
 	color: var(--white);
-	border-radius: 0px;
-	background-color: var(--bg);
+	border: none;
 	border: 1px solid var(--grey2);
+	border-radius: 0px;
+	background: var(--bg);
+	font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* line 84, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
@@ -2706,7 +2707,7 @@ label.error {
 	margin-top: 80px;
 	border-top: 1px solid var(--grey2);
 	border-bottom: 1px solid var(--grey2);
-	padding: 16px 0 16px 0;
+	padding: 16px 0;
 }
 
 /* line 127, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
@@ -2748,18 +2749,14 @@ label.error {
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 14px;
-	font-family: 'Gilroy-Heavy';
+	font-family: 'Gilroy-Heavy', serif;
 	font-weight: 900;
 	color: var(--pri);
 }
 
 /* line 146, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
 .footer .footer_menu ul li a:hover {
-	color: var(--white);
+	color: var(--pri);
 }
 
 /*# sourceMappingURL=style.css.map */
-
-:root {
-	overflow-x: hidden !important;
-}
