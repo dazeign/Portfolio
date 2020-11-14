@@ -101,12 +101,6 @@ button:focus {
 	text-decoration: none;
 	outline: none;
 }
-
-/* line 25, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
-a:focus {
-	text-decoration: none;
-}
-
 /* line 28, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 a:focus,
 a:hover,

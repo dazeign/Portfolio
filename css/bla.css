@@ -1,0 +1,187 @@
+/** @format */
+
+* {
+	border: 1px solid #ea8b96;
+}
+:root {
+	--bg: #1a1a1a;
+	--pri: #662d91;
+	--sec: #090113;
+	--pri2: #c8a1fb;
+	--white: #fefefe;
+	--white2: #d7d7d7;
+	--grey: #9d9d9d;
+	--grey2: #4b4b4b;
+}
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+a:focus,
+.button:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+.overlay {
+	position: relative;
+	z-index: 0;
+}
+.overlay::before {
+	position: absolute;
+	content: '';
+	background: var(--grey2);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+.header-area {
+	left: 0;
+	right: 0;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+	position: absolute;
+}
+
+@media (max-width: 767px) {
+	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area {
+		padding-top: 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area {
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	/* line 15, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area .logo {
+		width: 45px;
+	}
+}
+
+@media (max-width: 767px) {
+	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area .logo img {
+		width: 100%;
+	}
+}
+
+.header-area .main-header-area {
+	background: var(--bg);
+	/* background: transparent; */
+	padding: 10px 60px;
+	max-height: 120px;
+}
+.header-area .main-header-area .logo img {
+	/* margin-left: -4rem; */
+}
+
+@media (max-width: 767px) {
+	/* line 31, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area .main-header-area {
+		padding: 10px 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* line 31, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area .main-header-area {
+		padding: 10px 10px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	/* line 31, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area .main-header-area {
+		padding: 20px 20px;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+	/* line 31, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area .main-header-area {
+		padding: 20px 20px;
+	}
+}
+
+.header-area .main-header-area .quick_links {
+	text-align: left;
+}
+
+/* line 50, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+.header-area .main-header-area .quick_links ul li {
+	display: inline-block;
+	padding: 0 28px;
+	position: relative;
+	line-height: 1;
+}
+
+/* line 55, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+.header-area .main-header-area .quick_links ul li:last-child::before {
+	position: absolute;
+	left: 0;
+	height: 15px;
+	background: var(--grey2);
+	width: 2px;
+	content: '';
+	transform: translateY(-50%);
+	left: -3px;
+	top: 52%;
+}
+
+/* line 66, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+.header-area .main-header-area .quick_links ul li:first-child {
+	padding-left: 114px;
+}
+
+/* line 70, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+.header-area .main-header-area .quick_links ul li a {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--grey);
+}
+
+/* line 75, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+.header-area .main-header-area .quick_links ul li a:hover {
+	color: var(--pri) !important;
+}
+
+/* line 82, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+.header-area .main-header-area .menu_icon {
+	text-align: right;
+}
+
+@media (max-width: 767px) {
+	/* line 82, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area .main-header-area .menu_icon {
+		position: absolute;
+		top: -35px;
+		right: 18px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* line 82, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+	.header-area .main-header-area .menu_icon {
+		position: absolute;
+		top: -38px;
+		right: 18px;
+	}
+}
+
+/* line 94, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
+.header-area .main-header-area .menu_icon a {
+	text-align: right;
+	font-size: 16px;
+}
