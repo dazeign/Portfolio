@@ -698,7 +698,7 @@ h3 {
 .section_title span {
 	font-size: 14px;
 	font-family: 'Kumbh Sans', sans-serif;
-	color: var(--pri);
+	color: var(--grey);
 	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: 2.7px;
