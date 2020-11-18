@@ -654,6 +654,7 @@ h3 {
 	.section_title h3 {
 		font-size: 27px;
 		line-height: 39px;
+		font-family: 'Gilroy-Bold', serif !important;
 	}
 }
 
@@ -1425,6 +1426,9 @@ h3 {
 	/* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area {
 		padding: 120px 0;
+		background: url(/images/brightly-lit-laptop-keyboard.jpg) !important;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
 	}
 }
 
@@ -1468,6 +1472,7 @@ h3 {
 	.banner_area .banner_inner .banner_text h3 {
 		font-size: 46px;
 		line-height: 38px;
+		font-family: 'Gilroy-Bold', serif !important;
 	}
 	.banner_area .banner_inner .banner_text h3 span {
 		font-size: 27px;
@@ -1657,7 +1662,7 @@ h3 {
 /* line 153, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 .banner_area .quick_social_links ul li a {
 	font-size: 16px;
-	color: #79767e;
+	color: var(--grey);
 	font-weight: 300;
 	display: block;
 }
@@ -1807,6 +1812,8 @@ h3 {
 @media (max-width: 767px) {
 	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 	.timeline_area {
+		padding-bottom: 150px !important;
+		padding-top: 150px !important;
 		background-position: center center;
 	}
 }
@@ -2019,7 +2026,7 @@ h3 {
 	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
 	.gallery_area {
 		padding-top: 60px;
-		padding-bottom: 50px;
+		padding-bottom: 100px !important;
 	}
 }
 
@@ -2753,6 +2760,13 @@ label.error {
 	font-family: 'Gilroy-Heavy', serif;
 	font-weight: 900;
 	color: var(--pri);
+}
+
+@media (max-width: 767px) {
+	.footer .footer_menu ul li a,
+	h3 {
+		font-family: 'Gilroy-Bold', serif !important;
+	}
 }
 
 /* line 146, C:/xampp/htdocs/anthony HTML - preview/scss/_footer.scss */
