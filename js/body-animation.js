@@ -7,10 +7,15 @@ mastertl = gsap.timeline()
 
 onload = gsap.timeline()
 
-onload.from('.logo', {
-    delay: 0.5,
-    duration: 5,
-    opacity: 0,
-    scale: 0,
-    stagger: 0.25
- })
+// onload.from('.header-area', {
+//     delay: 0.5,
+//     duration: 2,
+//     opacity: 0,
+//     scale: 0,
+//     x: -150,
+//  })
+ onload.from('.header-area', {
+    duration: 0.5,
+    y: -20,
+    opacity: 1,
+ }, '-=2.5')
