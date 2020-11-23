@@ -1416,17 +1416,17 @@ h3 {
 	z-index: 0;
 	background: var(--bg);
 	padding: 220px 0;
-	background: url(/images/brightly-lit-laptop-keyboard.jpg);
+	background: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1606142835/images/brightly-lit-laptop-keyboard_no148p.jpg);
 	background-size: cover;
 	max-height: 100vh;
 	min-height: 100vh;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
 	/* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area {
 		padding: 120px 0;
-		background: url(/images/brightly-lit-laptop-keyboard.jpg) !important;
+		background: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1606142835/images/brightly-lit-laptop-keyboard_no148p.jpg) !important;
 		background-size: cover !important;
 		background-repeat: no-repeat !important;
 	}
