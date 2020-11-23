@@ -1422,7 +1422,7 @@ h3 {
 	min-height: 100vh;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
 	/* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area {
 		padding: 120px 0;
