@@ -1699,6 +1699,9 @@ h3 {
 	border: 1px solid var(--grey2);
 	padding: 27px 30px 50px 50px;
 }
+.service_area .single_service:hover {
+	border: 1px solid var(--pri);
+}
 
 @media (max-width: 767px) {
 	/* line 11, C:/xampp/htdocs/anthony HTML - preview/scss/_service.scss */
