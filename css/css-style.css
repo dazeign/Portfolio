@@ -65,6 +65,9 @@ body {
 	font-style: normal;
 	background: var(--bg);
 }
+* {
+	/* border: 1px solid rgb(31, 107, 72); */
+}
 
 /* line 12, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 .img {
