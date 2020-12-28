@@ -111,7 +111,7 @@ a:hover,
 /* line 34, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 a,
 button {
-	color: #1f1f1f;
+	color: var(--bg);
 	outline: medium none;
 }
 

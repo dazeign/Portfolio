@@ -2,6 +2,105 @@
 
 main {
 	height: 100vh;
-	background-color: red;
+	/* background-color: red; */
 	margin-top: 160px;
+}
+.uiux_projects .container .my-row {
+	/* height: 200px; */
+}
+.uiux_projects .project_text {
+	text-align: left;
+	margin-top: 24px;
+}
+
+@media (max-width: 767px) {
+	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+	.uiux_projects {
+		padding-top: 130px;
+		padding-bottom: 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+	.uiux_projects {
+		padding-bottom: 80px;
+	}
+}
+
+/* line 11, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+.uiux_projects .single_project {
+	position: relative;
+	background-color: #1c1c1c;
+	padding: 27px 30px 50px 50px;
+}
+.uiux_projects .single_project:hover {
+	border: 1px solid var(--pri);
+}
+
+@media (max-width: 767px) {
+	/* line 11, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+	.uiux_projects .single_project {
+		margin-bottom: 50px;
+		padding: 25px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* line 11, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+	.uiux_projects .single_project {
+		margin-bottom: 80px;
+	}
+}
+
+@media (max-width: 767px) {
+	/* line 33, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+	.uiux_projects .single_project .project_icon img {
+		width: 100%;
+	}
+}
+
+/* line 47, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+.uiux_projects .single_project .project_info h3 {
+	font-weight: 900;
+	font-size: 25px;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	/* line 47, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+	.uiux_projects .single_project .project_info h3 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	/* line 47, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+	.uiux_projects .single_project .project_info h3 {
+		font-size: 22px;
+		line-height: 32px;
+	}
+}
+
+/* line 61, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+.uiux_projects .single_project .project_info p {
+	margin-top: 34px;
+	margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+	/* line 61, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+	.uiux_projects .single_project .project_info p {
+		margin: 30px 0;
+	}
+}
+
+/* line 73, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
+.uiux_projects .single_project:hover .project_icon {
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
 }
