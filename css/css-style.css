@@ -1585,9 +1585,8 @@ h3 {
 	left: 12px;
 	background: transparent;
 	color: var(--pri);
-	outline: 2px solid var(--pri);
-	padding: 12px 24px;
-	border: none;
+	border: 2px solid var(--pri);
+	padding: 10px 22px;
 	cursor: pointer;
 }
 
@@ -1595,7 +1594,10 @@ h3 {
 .banner_area .banner_inner .banner_text .resume_btn:hover {
 	background: var(--white);
 	color: var(--pri);
-	border: 1px solid var(--pri);
+}
+.banner_area .banner_inner .banner_text .projects_btn:hover {
+	border: 2px solid var(--white);
+	color: var(--white);
 }
 
 /* line 96, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
@@ -1681,9 +1683,8 @@ h3 {
 }
 
 /* line 153, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-.banner_area .quick_social_links ul li a {
-	width: 18px;
-	color: var(--grey);
+.banner_area .quick_social_links ul li a img {
+	width: 24px;
 	font-weight: 300;
 	display: block;
 }
@@ -1700,7 +1701,7 @@ h3 {
 }
 .service_area .service_text {
 	text-align: left;
-	margin-top: 24px;
+	margin-top: 38px;
 }
 
 @media (max-width: 767px) {
