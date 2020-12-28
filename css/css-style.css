@@ -2112,34 +2112,69 @@ h3 {
 .banner_area .container-fluid,
 .hire_area .container-fluid,
 .testimonial_area .container-fluid,
+.testmonial_wrap .container-fluid,
+.contact_form_area .container-fluid,
+.footer .container-fluid,
 .timeline_area .container-fluid {
 	max-width: 1350px;
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
 	/* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid {
+	.gallery_area .container-fluid,
+	.service_area .container-fluid,
+	.banner_area .container-fluid,
+	.hire_area .container-fluid,
+	.testimonial_area .container-fluid,
+	.testmonial_wrap .container-fluid,
+	.contact_form_area .container-fluid,
+	.footer .container-fluid,
+	.timeline_area .container-fluid {
 		max-width: 1100px;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	/* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid {
+	.gallery_area .container-fluid,
+	.service_area .container-fluid,
+	.banner_area .container-fluid,
+	.hire_area .container-fluid,
+	.testimonial_area .container-fluid,
+	.testmonial_wrap .container-fluid,
+	.contact_form_area .container-fluid,
+	.footer .container-fluid,
+	.timeline_area .container-fluid {
 		max-width: 700px;
 	}
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
 	/* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid {
+	.gallery_area .container-fluid,
+	.service_area .container-fluid,
+	.banner_area .container-fluid,
+	.hire_area .container-fluid,
+	.testimonial_area .container-fluid,
+	.testmonial_wrap .container-fluid,
+	.contact_form_area .container-fluid,
+	.footer .container-fluid,
+	.timeline_area .container-fluid {
 		max-width: 900px;
 	}
 }
 
 @media only screen and (min-width: 1501px) and (max-width: 1600px) {
 	/* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid {
+	.gallery_area .container-fluid,
+	.service_area .container-fluid,
+	.banner_area .container-fluid,
+	.hire_area .container-fluid,
+	.testimonial_area .container-fluid,
+	.testmonial_wrap .container-fluid,
+	.contact_form_area .container-fluid,
+	.footer .container-fluid,
+	.timeline_area .container-fluid {
 		max-width: 1400px;
 	}
 }
