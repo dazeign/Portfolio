@@ -12,6 +12,15 @@ main {
 	text-align: left;
 	margin-top: 24px;
 }
+.uiux_projects .container .project_foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.uiux_projects .container .project_foot .case_text {
+	font-weight: 900;
+	color: var(--pri);
+}
 
 @media (max-width: 767px) {
 	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
@@ -32,7 +41,7 @@ main {
 .uiux_projects .single_project {
 	position: relative;
 	background-color: #1c1c1c;
-	padding: 27px 30px 50px 50px;
+	padding: 36px 42px;
 }
 .uiux_projects .single_project:hover {
 	border: 1px solid var(--pri);
@@ -62,7 +71,6 @@ main {
 
 /* line 47, C:/xampp/htdocs/anthony HTML - preview/scss/_project.scss */
 .uiux_projects .single_project .project_info h3 {
-	font-weight: 900;
 	font-size: 25px;
 	line-height: 35px;
 	text-transform: uppercase;
