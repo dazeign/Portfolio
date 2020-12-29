@@ -64,6 +64,7 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	background: var(--bg);
+	/* overflow-x: hidden !important; */
 }
 * {
 	/* outline: 1px solid rgb(31, 107, 72); */
@@ -2859,7 +2860,7 @@ label.error {
 }
 
 .slider1 {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 50%;
@@ -2868,7 +2869,7 @@ label.error {
 	z-index: 99;
 }
 .slider2 {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	width: 50%;
