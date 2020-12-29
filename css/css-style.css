@@ -1423,6 +1423,7 @@ h3 {
 	background: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1606142835/images/brightly-lit-laptop-keyboard_no148p.jpg);
 	background: url(../images/lightly-lit-laptop-keyboard.jpg);
 	background-size: cover;
+	background-position: right;
 	object-fit: contain;
 	max-height: 100vh;
 	min-height: 100vh;
@@ -1432,9 +1433,12 @@ h3 {
 	/* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area {
 		padding: 120px 0;
-		background: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1606142835/images/brightly-lit-laptop-keyboard_no148p.jpg) !important;
+		background: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1606142835/images/brightly-lit-laptop-keyboard_no148p.jpg);
+		background: url(../images/lightly-lit-laptop-keyboard.jpg);
 		background-size: cover !important;
 		background-repeat: no-repeat !important;
+		background-position: right !important;
+		object-fit: contain !important;
 	}
 }
 
