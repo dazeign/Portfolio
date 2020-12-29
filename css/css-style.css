@@ -2861,7 +2861,7 @@ label.error {
 	width: 50%;
 	height: 100vh;
 	background: var(--bg);
-	/* z-index: -99; */
+	z-index: 99;
 }
 .slider2 {
 	position: absolute;
@@ -2870,7 +2870,7 @@ label.error {
 	width: 50%;
 	height: 100vh;
 	background: var(--pri);
-	/* z-index: -99; */
+	z-index: 99;
 }
 .banner_text {
 	/* background-color: red; */
