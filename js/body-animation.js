@@ -1,21 +1,19 @@
-gsap.set(".container", {visibility:"visible"});
+const logo = document.querySelector('.logo');
+const quickLinks = document.querySelector('.quick_links');
+const menu = document.querySelector('.menu_icon');
 
-gsap.registerPlugin(ScrollTrigger);
-
-mastertl = gsap.timeline()
+const bannerText = document.querySelector('.banner_text');
 
 
-onload = gsap.timeline()
+const tl = new TimelineMax();
 
-// onload.from('.header-area', {
-//     delay: 0.5,
-//     duration: 2,
-//     opacity: 0,
-//     scale: 0,
-//     x: -150,
-//  })
- onload.from('.header-area', {
-    duration: 0.5,
-    y: -20,
-    opacity: 1,
- }, '-=2.5')
+tl.fromTo(slider1,1, {zIndex: "99"}, {zIndex: "-99"});
+
+
+
+// let tl = gsap.timeline({
+//    scrollTrigger: {
+//       trigger: ".banner_text",
+//       start: "bottom center"
+//    }
+// })

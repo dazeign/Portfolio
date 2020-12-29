@@ -487,11 +487,6 @@ h3 {
 	font-size: 25px;
 }
 
-/* line 321, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
-#scrollUp:hover i {
-	animation: none;
-}
-
 @media (max-width: 767px) {
 	/* line 308, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
 	#scrollUp {
@@ -1426,7 +1421,9 @@ h3 {
 	background: var(--bg);
 	padding: 220px 0;
 	background: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1606142835/images/brightly-lit-laptop-keyboard_no148p.jpg);
+	background: url(../images/lightly-lit-laptop-keyboard.jpg);
 	background-size: cover;
+	object-fit: contain;
 	max-height: 100vh;
 	min-height: 100vh;
 }
@@ -2843,4 +2840,38 @@ label.error {
 	color: var(--pri);
 }
 
-/*# sourceMappingURL=style.css.map */
+/* animations */
+
+@keyframes float {
+	0% {
+		transform: translate(0%, 100%);
+	}
+	50% {
+		transform: translate(0%, 0%);
+	}
+	100% {
+		transform: translate(0%, 0%);
+	}
+}
+
+.slider1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100vh;
+	background: var(--bg);
+	/* z-index: -99; */
+}
+.slider2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100vh;
+	background: var(--pri);
+	/* z-index: -99; */
+}
+.banner_text {
+	/* background-color: red; */
+}
