@@ -9,6 +9,18 @@ gsap.from('.banner_text a', {duration: 1, opacity: 0, delay: 2.2,});
 
 
 // second sections using scrollTrigger Plugin
+gsap.register(ScrollTrigger);
 gsap.to(
-
+   ".service_area .section_title", {
+      ScrollTrigger:{
+         trigger: ".service_area .section_title",
+         start: "20px 80%",
+         end: "bottom 100px",
+         markers: true,
+         toggleActions: "restart pause resume none"
+      },
+      x: 400,
+      rotation: 360,
+      duration: 3
+   }
 )

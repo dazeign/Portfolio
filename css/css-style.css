@@ -1464,7 +1464,7 @@ h3 {
 }
 
 /* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-.banner_area .banner_inner .banner_text h3 {
+.banner_area .banner_inner .banner_text h3 span{
 	font-family: 'Gilroy-Heavy', serif;
 	font-size: 80px;
 	font-weight: 900;
@@ -1473,26 +1473,26 @@ h3 {
 }
 
 /* line 29, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-.banner_area .banner_inner .banner_text h3 span {
+.banner_area .banner_inner .banner_text h3 {
 	color: var(--white);
 	font-size: 38px;
 }
 
 @media (max-width: 767px) {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-	.banner_area .banner_inner .banner_text h3 {
+	.banner_area .banner_inner .banner_text h3 span{
 		font-size: 46px;
 		line-height: 38px;
 		font-family: 'Gilroy-Bold', serif !important;
 	}
-	.banner_area .banner_inner .banner_text h3 span {
+	.banner_area .banner_inner .banner_text h3 {
 		font-size: 27px;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-	.banner_area .banner_inner .banner_text h3 {
+	.banner_area .banner_inner .banner_text h3 span{
 		font-size: 56px;
 		line-height: 50px;
 	}
@@ -1500,7 +1500,7 @@ h3 {
 
 @media (min-width: 992px) and (max-width: 1200px) {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-	.banner_area .banner_inner .banner_text h3 {
+	.banner_area .banner_inner .banner_text h3 span{
 		font-size: 60px;
 		line-height: 56px;
 	}
@@ -2858,6 +2858,34 @@ label.error {
 		transform: translate(0%, 0%);
 	}
 }
+
+@keyframes grow {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(3);
+	}
+}
+@keyframes move {
+	0% {
+		transform: translate(0);
+	}
+	50% {
+		transform: translateY(6px);
+	}
+	100% {
+		transform: translateY(0));
+	}
+}
+
+/* grow{
+	animation: grow 1s infinite linear;
+} */
+.banner_text h3 span{
+	animation: move 3s infinite linear;
+	display: block;
+} 
 
 .slider1 {
 	position: fixed;
