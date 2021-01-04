@@ -1310,6 +1310,9 @@ h3 {
 	height: 30px;
 	text-align: center;
 	line-height: 136px;
+	position: fixed;
+	right: 120px;
+	top: 60px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1324,8 +1327,8 @@ h3 {
 }
 
 /* line 257, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
-.offcanvas_menu .close_menu i {
-	font-size: 25px;
+.offcanvas_menu .close_menu p {
+	font-size: 18px;
 	color: var(--white);
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
@@ -1335,9 +1338,9 @@ h3 {
 }
 
 /* line 262, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
-.offcanvas_menu .close_menu i:hover {
+.offcanvas_menu .close_menu p:hover {
 	color: var(--pri);
-	transform: rotate(180deg);
+	transform: scale(1);
 }
 
 /* line 269, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
@@ -1464,7 +1467,7 @@ h3 {
 }
 
 /* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-.banner_area .banner_inner .banner_text h3 span{
+.banner_area .banner_inner .banner_text h3 span {
 	font-family: 'Gilroy-Heavy', serif;
 	font-size: 80px;
 	font-weight: 900;
@@ -1480,7 +1483,7 @@ h3 {
 
 @media (max-width: 767px) {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-	.banner_area .banner_inner .banner_text h3 span{
+	.banner_area .banner_inner .banner_text h3 span {
 		font-size: 46px;
 		line-height: 38px;
 		font-family: 'Gilroy-Bold', serif !important;
@@ -1492,7 +1495,7 @@ h3 {
 
 @media (min-width: 768px) and (max-width: 991px) {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-	.banner_area .banner_inner .banner_text h3 span{
+	.banner_area .banner_inner .banner_text h3 span {
 		font-size: 56px;
 		line-height: 50px;
 	}
@@ -1500,7 +1503,7 @@ h3 {
 
 @media (min-width: 992px) and (max-width: 1200px) {
 	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
-	.banner_area .banner_inner .banner_text h3 span{
+	.banner_area .banner_inner .banner_text h3 span {
 		font-size: 60px;
 		line-height: 56px;
 	}
@@ -2872,20 +2875,20 @@ label.error {
 		transform: translate(0);
 	}
 	50% {
-		transform: translateY(6px);
+		transform: translateY(8px);
 	}
 	100% {
-		transform: translateY(0));
+		transform: translateY(0);
 	}
 }
 
 /* grow{
 	animation: grow 1s infinite linear;
 } */
-.banner_text h3 span{
-	animation: move 3s infinite linear;
+.banner_text h3 span {
+	animation: move 2s infinite linear;
 	display: block;
-} 
+}
 
 .slider1 {
 	position: fixed;
