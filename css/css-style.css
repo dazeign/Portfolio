@@ -57,7 +57,9 @@
 	--white2: #d7d7d7;
 	--grey: #9d9d9d;
 	--grey2: #4b4b4b;
-	--overlay: #0c0116;
+	--overlay: #0a0211;
+	--card: #212121;
+	--hover-card: #282828;
 }
 body {
 	font-family: 'Gilroy-Heavy', serif;
@@ -123,7 +125,10 @@ h3,
 h4,
 h5 {
 	font-family: 'Gilroy-Heavy', serif;
-	color: var(--pri);
+	/* color: var(--pri); */
+}
+h3{
+	color: var(--white);
 }
 
 /* line 43, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
@@ -283,7 +288,7 @@ h3 {
 .overlay2::before {
 	position: absolute;
 	content: '';
-	background-color: #000;
+	background-color: var(--overlay);
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -769,7 +774,6 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	/* line 103, C:/xampp/htdocs/anthony HTML - preview/scss/_section_title.scss */
 	.mb-73 {
 		margin-bottom: 40px;
 	}
@@ -1048,7 +1052,7 @@ h3 {
 
 /* line 66, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
 .header-area .main-header-area .quick_links ul li:first-child {
-	padding-left: 114px;
+	/* padding-left: 114px; */
 }
 
 /* line 70, C:/xampp/htdocs/anthony HTML - preview/scss/_header.scss */
@@ -1424,8 +1428,7 @@ h3 {
 	z-index: 0;
 	background: var(--bg);
 	padding: 220px 0;
-	background: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1606142835/images/brightly-lit-laptop-keyboard_no148p.jpg);
-	background: url(../images/lightly-lit-laptop-keyboard.jpg);
+	background: url(../images/dazeign-hero-image.jpg);
 	background-size: cover;
 	background-position: right;
 	object-fit: contain;
@@ -1437,13 +1440,30 @@ h3 {
 	/* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area {
 		padding: 120px 0;
-		background: url(https://res.cloudinary.com/dlq9o1289/image/upload/v1606142835/images/brightly-lit-laptop-keyboard_no148p.jpg);
-		background: url(../images/lightly-lit-laptop-keyboard.jpg);
+		background: url(../images/dazeign-hero-image.jpg);
 		background-size: cover !important;
 		background-repeat: no-repeat !important;
 		background-position: right !important;
 		object-fit: contain !important;
 	}
+	.banner_area_res{
+		position: relative;
+		z-index: 0;
+	}
+	
+	/* line 174, C:/xampp/htdocs/anthony HTML - preview/scss/theme-default.scss */
+	.banner_area_res::before {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: var(--overlay);
+		opacity: 0.8;
+		content: '';
+		z-index: -1;
+	}
+	
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1456,8 +1476,7 @@ h3 {
 @media (min-width: 992px) and (max-width: 1200px) {
 	/* line 2, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 	.banner_area {
-		padding-top: 167px;
-		padding-bottom: 130px;
+		padding-top: 120px;
 	}
 }
 
@@ -1469,9 +1488,9 @@ h3 {
 /* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_banner.scss */
 .banner_area .banner_inner .banner_text h3 span {
 	font-family: 'Gilroy-Heavy', serif;
-	font-size: 80px;
+	font-size: 64px;
 	font-weight: 900;
-	line-height: 60px;
+	line-height: 64px;
 	color: var(--white);
 }
 
@@ -1705,7 +1724,7 @@ h3 {
 	padding-bottom: 160px;
 }
 .service_area .service_text {
-	text-align: left;
+	text-align: center;
 	margin-top: 38px;
 }
 
@@ -1727,11 +1746,16 @@ h3 {
 /* line 11, C:/xampp/htdocs/anthony HTML - preview/scss/_service.scss */
 .service_area .single_service {
 	position: relative;
-	border: 1px solid var(--grey2);
 	padding: 27px 30px 50px 50px;
+	background: var(--card);
 }
 .service_area .single_service:hover {
-	border: 1px solid var(--pri);
+	outline: 1px solid var(--grey2);
+	/* background: var(--hover-card); */
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
 }
 
 @media (max-width: 767px) {
@@ -1758,6 +1782,8 @@ h3 {
 	-moz-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
+	width: 120px;
+	height: 120px;
 }
 
 @media (max-width: 767px) {
@@ -1830,6 +1856,228 @@ h3 {
 	-ms-transform: translateY(-10px);
 	transform: translateY(-10px);
 }
+.showcase_area {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.showcase_area .showcase_text {
+	text-align: center;
+	margin-top: 38px;
+}
+
+@media (max-width: 767px) {
+	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+	.showcase_area {
+		padding-top: 100px;
+		padding-bottom: 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+	.showcase_area {
+		padding-bottom: 80px;
+	}
+}
+
+/* line 11, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+.showcase_area .single_showcase {
+	position: relative;
+	background: var(--card);
+	padding: 50px;
+	margin-left: auto;
+	margin-bottom: 80px;
+}
+.showcase_area .single_showcase .showcase_view{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+.showcase_area .single_showcase h4{
+	font-family: 'Gilroy-regular', serif;
+	font-size: 0.5rem;
+	color: var(--white2);
+	text-align: left;
+}
+.showcase_area .single_showcase .showcase_view h4{
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: 100 !important;
+	color: var(--white);
+}
+.showcase_area .single_showcase .showcase_view ul{
+	display: flex;
+	width: 100px;
+	justify-content: space-between;
+	margin-left: 24px;
+}
+.showcase_area .single_showcase:hover {
+	cursor: pointer;
+	background: var(--hover-card);
+	-webkit-transform: scale(1.02);
+	-moz-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	transform: scale(1.02);
+	transition: all 0.32s ease-in-out;
+	box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.36);
+}
+.port:hover{
+	border: none;
+}
+
+@media (max-width: 767px) {
+	/* line 11, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+	.showcase_area .single_showcase {
+		margin-bottom: 50px;
+		padding: 25px;
+	}
+	.showcase_area .single_showcase:hover {
+		transform: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* line 11, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+	.showcase_area .single_showcase {
+		margin-bottom: 80px;
+	}
+}
+
+/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+.showcase_area .single_showcase .showcase_icon {
+	position: absolute;
+	right: 40px;
+	top: -48px;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	width: 120px;
+	height: 120px;
+}
+
+@media (max-width: 767px) {
+	/* line 22, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+	.showcase_area .single_showcase .showcase_icon {
+		right: 30px;
+		top: 20px;
+		width: 90px;
+		height: 90px;
+	}
+}
+
+@media (max-width: 767px) {
+	/* line 33, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+	.showcase_area .single_showcase .showcase_icon img {
+		width: 100%;
+	}
+}
+
+/* line 39, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+.showcase_area .single_showcase .number {
+	color: var(--grey);
+	font-size: 60px;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: 400;
+	margin-bottom: 55px;
+}
+
+/* line 47, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+.showcase_area .single_showcase .showcase_info h3 {
+	font-weight: 900;
+	font-size: 25px;
+	line-height: 35px;
+	margin-left: 24px;
+	text-transform: uppercase;
+}
+.showcase_area .single_showcase .showcase_info .mockup {
+	margin-top: -80px;
+	width: 320px;
+}
+.showcase_area .single_showcase .showcase_info h4 {
+	color: var(--white2);
+	font-weight: 200;
+	font-size: 18px;
+	margin-left: 24px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.showcase_area .single_showcase .showcase_info h3 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.showcase_area .single_showcase .showcase_info .mockup {
+		width: 240px;
+		margin-top: 0;
+	}
+}
+@media (min-width: 767px) and (max-width: 992px) {
+	.showcase_area .single_showcase .showcase_info h3 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.showcase_area .single_showcase .showcase_info .mockup {
+		width: 280px;
+		margin-top: -80px;
+		margin-left: 20%;
+		justify-self: center;
+		margin-right: 20%;
+		margin-bottom: 24px;
+	}
+	.showcase_area .single_showcase .showcase_view{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 467px) {
+	/* line 47, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+	.showcase_area .single_showcase .showcase_info h3 {
+		font-size: 22px;
+		line-height: 32px;
+		margin-right: 0px;
+	}
+	.showcase_area .single_showcase .showcase_info h3,
+	.showcase_area .single_showcase .showcase_info h4 {
+		margin-left: 0px;
+	}
+	.showcase_area .single_showcase .showcase_info .mockup {
+		width: 220px;
+		margin-top: -40px;
+		margin-left: 0;
+		margin-bottom: 24px;
+	}
+	.showcase_area .single_showcase{
+		margin-bottom: 68px;
+	}
+	.showcase_area .single_showcase .showcase_info p {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 36px;
+	}
+}
+
+/* line 61, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+.showcase_area .single_showcase .showcase_info p {
+	margin-top: 34px;
+	margin-bottom: 50px;
+	margin-left: 24px;
+}
+
+@media (max-width: 767px) {
+	/* line 61, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+	.showcase_area .single_showcase .showcase_info p {
+		margin: 30px 0;
+	}
+}
+
+/* line 73, C:/xampp/htdocs/anthony HTML - preview/scss/_showcase.scss */
+.showcase_area .single_showcase:hover .showcase_icon {
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
 
 /* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 .timeline_area {
@@ -1867,7 +2115,6 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_timeline.scss */
 	.timeline_area {
 		background-position: center center;
 	}
@@ -1893,7 +2140,6 @@ h3 {
 	font-weight: 900;
 	line-height: 50px;
 	text-transform: uppercase;
-	color: var(--pri);
 }
 
 @media (max-width: 767px) {
@@ -1944,7 +2190,7 @@ h3 {
 .timeline_area .single_time_line h4 {
 	font-size: 20px;
 	font-weight: 700;
-	color: var(--pri);
+	color: var(--white);
 	margin-bottom: 17px;
 }
 
@@ -2050,70 +2296,12 @@ h3 {
 	}
 }
 
-/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area {
-	padding-bottom: 160px;
-	padding-top: 80px;
-}
-
-@media (max-width: 767px) {
-	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area {
-		padding-top: 60px;
-		padding-bottom: 100px !important;
-	}
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-	/* line 1, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-}
-
-/* line 13, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area .single_gallery {
-	overflow: hidden;
-}
-
-/* line 15, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area .single_gallery a {
-	display: block;
-}
-
-/* line 17, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area .single_gallery a img {
-	width: 100%;
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
-}
 
 /* line 23, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area .single_gallery a:hover img {
-	transform: scale(1.2);
-}
 
-/* line 28, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area .grid-item {
-	margin-bottom: 40px;
-}
-
-@media (max-width: 767px) {
-	/* line 28, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .grid-item {
-		margin-bottom: 30px;
-	}
-}
 
 /* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area .container-fluid,
+.showcase_area .container-fluid,
 .service_area .container-fluid,
 .banner_area .container-fluid,
 .hire_area .container-fluid,
@@ -2127,7 +2315,7 @@ h3 {
 
 @media (min-width: 1200px) and (max-width: 1500px) {
 	/* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid,
+	.showcase_area .container-fluid,
 	.service_area .container-fluid,
 	.banner_area .container-fluid,
 	.hire_area .container-fluid,
@@ -2142,7 +2330,7 @@ h3 {
 
 @media (min-width: 768px) and (max-width: 991px) {
 	/* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid,
+	.showcase_area .container-fluid,
 	.service_area .container-fluid,
 	.banner_area .container-fluid,
 	.hire_area .container-fluid,
@@ -2157,7 +2345,7 @@ h3 {
 
 @media (min-width: 992px) and (max-width: 1200px) {
 	/* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid,
+	.showcase_area .container-fluid,
 	.service_area .container-fluid,
 	.banner_area .container-fluid,
 	.hire_area .container-fluid,
@@ -2172,7 +2360,7 @@ h3 {
 
 @media only screen and (min-width: 1501px) and (max-width: 1600px) {
 	/* line 35, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid,
+	.showcase_area .container-fluid,
 	.service_area .container-fluid,
 	.banner_area .container-fluid,
 	.hire_area .container-fluid,
@@ -2185,49 +2373,6 @@ h3 {
 	}
 }
 
-/* line 68, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area .container-fluid .row.grid {
-	margin-right: -20px;
-	margin-left: -20px;
-}
-
-@media (max-width: 767px) {
-	/* line 68, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid .row.grid {
-		margin-right: -15px;
-		margin-left: -15px;
-	}
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-	/* line 68, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid .row.grid {
-		margin-right: -15px;
-		margin-left: -15px;
-	}
-}
-
-@media (min-width: 1200px) and (max-width: 1500px) {
-	/* line 68, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid .row.grid {
-		margin-right: -20px;
-		margin-left: -20px;
-	}
-}
-
-/* line 83, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-.gallery_area .container-fluid .row.grid .col-lg-4 {
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
-@media (max-width: 767px) {
-	/* line 83, C:/xampp/htdocs/anthony HTML - preview/scss/_gallery.scss */
-	.gallery_area .container-fluid .row.grid .col-lg-4 {
-		padding-right: 15px;
-		padding-left: 15px;
-	}
-}
 
 /* line 4, C:/xampp/htdocs/anthony HTML - preview/scss/_hire.scss */
 .hire_area {
@@ -2236,12 +2381,17 @@ h3 {
 	background-repeat: no-repeat;
 	padding: 145px 0 150px 0;
 	background: url(../images/hire-me-img.jpg);
+	width: 100%;
+}
+.hire_area h4{
+	font-family: 'Gilroy-regular', serif;
+	color: var(--white);
 }
 
 @media (max-width: 767px) {
 	/* line 4, C:/xampp/htdocs/anthony HTML - preview/scss/_hire.scss */
 	.hire_area {
-		padding: 100px 0;
+		padding: 80px 0;
 	}
 }
 
@@ -2907,7 +3057,4 @@ label.error {
 	height: 100vh;
 	background: var(--pri);
 	z-index: 99;
-}
-.banner_text {
-	/* background-color: red; */
 }
